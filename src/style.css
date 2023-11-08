@@ -1,8 +1,12 @@
-@font-face {
-  font-family: 'Inter';
-  src: url('fonts/Inter-Medium.ttf') format('truetype');
-  font-weight: medium;
-  font-style: medium;
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+:root {
+  --color-background: #1E2021;
+  --color-text: #c6d08a;
+  --color-text-mute: #846d57;
+  /* --color-primary: ;
+  --color-secondary: ;
+  --color-accent: ; */
 }
 
 html body {
@@ -18,7 +22,7 @@ html body {
   height: 100%;
   margin:auto;
 
-  background-color: #1E2021;
+  background-color: var(--color-background);
 
   font-family: 'Inter', sans-serif;
   font-size: 3rem;
@@ -26,7 +30,7 @@ html body {
 
 .greet {
   margin: auto auto 1rem auto;
-  color: #c6d08a;
+  color: var(--color-text);
 }
 
 .search, .search:active .search:focus{
@@ -35,8 +39,8 @@ html body {
   height: 5vw;
   width: 80vw;
   
-  background-color: #1E2021;
-  color: #c6d08a;
+  background-color: var(--color-background);
+  color: var(--color-text);
   font-family: 'Inter', sans-serif;
   font-size: 3rem;
 
