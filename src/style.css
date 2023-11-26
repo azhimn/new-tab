@@ -1,12 +1,9 @@
  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
 :root {
-  --color-background: #1E2021;
-  --color-text: #c6d08a;
-  --color-text-mute: #846d57;
-  /* --color-primary: ;
-  --color-secondary: ;
-  --color-accent: ; */
+  --color-background: #fff;
+  --color-primary: #fff;
+  --color-mute: #fff;
 }
 
 html body {
@@ -28,19 +25,19 @@ html body {
   font-size: 3rem;
 }
 
-.greet {
+#greet {
   margin: auto auto 1rem auto;
-  color: var(--color-text);
+  color: var(--color-primary);
 }
 
-.search, .search:active .search:focus{
+#search, #search:active #search:focus{
   text-align: center;
   margin: 0 auto auto auto;
   height: 5vw;
   width: 80vw;
   
   background-color: var(--color-background);
-  color: var(--color-text);
+  color: var(--color-primary);
   font-family: 'Inter', sans-serif;
   font-size: 3rem;
 
