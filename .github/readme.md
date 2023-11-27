@@ -23,7 +23,7 @@
     <code>!gh</code> To open or search <a href="https://github.com">GitHub</a>
   </li>
   <li>
-    <code>!gm</code> To open or search <a href="https://mail.google.com">Gmail</a>
+    <code>!gm</code> To open <a href="https://mail.google.com">Gmail</a>
   </li>
   <li>
     <code>!w</code> To open or search <a href="https://wikipedia.org">Wikipedia</a>
