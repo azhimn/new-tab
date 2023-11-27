@@ -2,9 +2,14 @@
 Repo for my custom [Firefox](https://www.mozilla.org/en-US/firefox/new/) new tab.
 Heavily inspired by [Korys Schneider's tab](https://github.com/KorySchneider/tab).
 
-#### commands
+#### Preview
+In this preview, I use [andreasgrafen/cascade](https://github.com/andreasgrafen/cascade/) as [Firefox](https://www.mozilla.org/en-US/firefox/new/) userCrhome.css theme.
+[Preview Image](./assets/preview.gif)
+
+#### Commands
 new-tab support commands.
 As of now, only commands that opens or searches on certain websites is supported.
+
 - `!yt` Open or search [Youtube](https://youtube.com)
 - `!w` Open or search [Wikipedia](https://wikipedia.org)
 - `!gm` Open [Gmail](https://mail.google.com)
