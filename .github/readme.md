@@ -4,7 +4,7 @@ Heavily inspired by [Korys Schneider's tab](https://github.com/KorySchneider/tab
 
 #### Preview
 In this preview, I use [andreasgrafen/cascade](https://github.com/andreasgrafen/cascade/) as [Firefox](https://www.mozilla.org/en-US/firefox/new/) userCrhome.css theme.
-[Preview Image](./assets/preview.gif)
+![Preview Image](./assets/preview.gif)
 
 #### Commands
 new-tab support commands.
