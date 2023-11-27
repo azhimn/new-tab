@@ -1,17 +1,34 @@
-### new-tab
-Repo for my custom [Firefox](https://www.mozilla.org/en-US/firefox/new/) new tab.
-Heavily inspired by [Korys Schneider's tab](https://github.com/KorySchneider/tab).
+<h3>new-tab</h3>
+<p>
+  Repository for my custom <a href="https://www.mozilla.org/firefox">Firefox</a> home page & new tab page.  
+</p>
+<p>
+  Heavily inspired by <a href="https://github.com/KorySchneider/tab">KorySchneider/tab</a>.
+</p>
 
-#### Preview
-In this preview, I use [andreasgrafen/cascade](https://github.com/andreasgrafen/cascade/) as [Firefox](https://www.mozilla.org/en-US/firefox/new/) userCrhome.css theme.
-![Preview Image](./assets/preview.gif)
+<h3>Preview</h3>
+<p>
+  In this preview, I use <a href="https://github.com/andreasgrafen/cascade">andreasgrafen/cascade</a> as <a href="https://www.mozilla.org/firefox">Firefox</a> userChrome.css theme.
+</p>
+<img src="./assets/preview.gif" alt="preview image">
 
-#### Commands
-new-tab support commands.
-As of now, only commands that opens or searches on certain websites is supported.
-
-- `!yt` Open or search [Youtube](https://youtube.com)
-- `!w` Open or search [Wikipedia](https://wikipedia.org)
-- `!gm` Open [Gmail](https://mail.google.com)
-- `!gh` Open or search [GitHub](https://github.com)
-- `!arch` Open [Arch Linux website](https://archlinux.org) or search [Arch Linux Wiki](https://wiki.archlinux.org)
+<h3>Commands</h3>
+<p>new-tab support commands.</p>
+<p>As of now, only commands that opens or searches certain websites are supported.</p>
+<ul>
+  <li>
+    <code>!arch</code> To open <a href="https://archlinux.org">Arch Linux website</a> or search <a href="https://wiki.archlinux.org">Arch Linux Wiki</a>
+  </li>
+  <li>
+    <code>!gh</code> To open or search <a href="https://github.com">GitHub</a>
+  </li>
+  <li>
+    <code>!gm</code> To open or search <a href="https://mail.google.com">Gmail</a>
+  </li>
+  <li>
+    <code>!w</code> To open or search <a href="https://wikipedia.org">Wikipedia</a>
+  </li>
+  <li>
+    <code>!yt</code> To open or search <a href="https://youtube.com">YouTube</a>.
+  </li>
+</ul>
