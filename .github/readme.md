@@ -7,8 +7,9 @@
 </p>
 
 <h3>Preview</h3>
+<p>You can see the live preview <a href="https://azhimn.github.io/new-tab/">here</a>.</p>
 <p>
-  In this preview, I use <a href="https://github.com/andreasgrafen/cascade">andreasgrafen/cascade</a> as <a href="https://www.mozilla.org/firefox">Firefox</a> userChrome.css theme.
+  In this image preview, I use <a href="https://github.com/andreasgrafen/cascade">andreasgrafen/cascade</a> as <a href="https://www.mozilla.org/firefox">Firefox</a> userChrome.css theme.
 </p>
 <img src="./assets/preview.gif" alt="preview image">
 
