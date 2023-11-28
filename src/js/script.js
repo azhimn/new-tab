@@ -1,11 +1,13 @@
 localStorage.getItem('config') == 'undefined' || localStorage.getItem('config') == null ? localStorage.setItem('config', JSON.stringify(configDefault)) : null;
 var config = JSON.parse(localStorage.getItem('config'));
-console.log('Welcome to azhimn/new-tab version ' + config.ver + '!');
+
+console.log('Welcome to azhimn/new-tab version ' + config.config.version + '!');
 
 window.onload = function styleInit() {
-  let style = document.documentElement.style;
-  let configStyle = config.config.style;
-  let greet = document.getElementById('greet');
+  window.greet = document.getElementById('greet');
+  window.style = document.documentElement.style;
+  window.configStyle = config.config.style;
+  // let greet = document.getElementById('greet');
 
   style.setProperty('--color-background', configStyle.background);
   style.setProperty('--color-primary', configStyle.primary);
@@ -20,7 +22,6 @@ function search(event) {
     search.value.charAt(0) == '!' ? searchCommand(search.value) : searchEngine(search.value);
   }
 }
-
 
 function searchEngine(searchValue) {
   const domainRegex = /^([a-zA-Z0-9-]+\.){1,}[a-zA-Z]{2,}$/;
@@ -52,9 +53,30 @@ function searchCommand(searchValue) {
   }
 
   if (command == config.config.command) {
-    // wip
-  } else {
+    searchConfig(param);
+  } else if (!Object.keys(config.web).includes(command)) {
+    greetTimeout(`Command <code>${command}</code> not found.`);
+  } 
+  else {
     searchWeb(command, param);
+  }
+}
+
+function searchConfig(param) {
+  if (!param) {
+    greetTimeout(`Please specify the configuration option.`);
+    return;
+  }
+
+  const configAvailable = Object.entries(config.config);
+  let space = param.indexOf(' ');
+  let configChoice = param.substring(0, space);
+  let configChoiceValue = param.substring(space + 1);
+
+  if (!configChoiceValue && !Object.keys(config.config).includes(configChoice)) {
+
+  } else {
+    greetTimeout(`Option <code>${param}</code> not found.`);
   }
 }
 
@@ -67,4 +89,11 @@ function searchWeb(command, param) {
   } else {
     param ? window.location.href = search + param : window.location.href = config.web[command].url;
   }
+}
+
+function greetTimeout(text) {
+  greet.innerHTML = text;
+  setTimeout(() => {
+    greet.innerHTML = config.config.style.greet;
+  }, 3000);
 }
