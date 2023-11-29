@@ -1,7 +1,7 @@
 localStorage.getItem('config') == 'undefined' || localStorage.getItem('config') == null ? localStorage.setItem('config', JSON.stringify(configDefault)) : null;
 var config = JSON.parse(localStorage.getItem('config'));
 
-console.log('Welcome to azhimn/new-tab version ' + config.config.version + '!');
+console.log('Welcome to azhimn/new-tab version ' + config.version + '!');
 
 window.onload = function styleInit() {
   window.greet = document.getElementById('greet');
@@ -54,6 +54,8 @@ function searchCommand(searchValue) {
 
   if (command == config.config.command) {
     searchConfig(param);
+  } else if (command ==  'version') {
+    greetTimeout(`Your <code>new-tab</code> version is <code>${config.version}</code>.`);
   } else if (!Object.keys(config.web).includes(command)) {
     greetTimeout(`Command <code>${command}</code> not found.`);
   } 
@@ -73,8 +75,10 @@ function searchConfig(param) {
   let configChoice = param.substring(0, space);
   let configChoiceValue = param.substring(space + 1);
 
-  if (!configChoiceValue && !Object.keys(config.config).includes(configChoice)) {
-
+  if (!Object.keys(config.config).includes(configChoice)) {
+    console.log(configChoice);
+    console.log(configChoiceValue);
+    searchOption(configChoice, configChoiceValue);
   } else {
     greetTimeout(`Option <code>${param}</code> not found.`);
   }
@@ -88,6 +92,13 @@ function searchWeb(command, param) {
     param ? window.location.href = url + search + param : window.location.href = config.web[command].url;
   } else {
     param ? window.location.href = search + param : window.location.href = config.web[command].url;
+  }
+}
+
+function searchOption(configChoice, configChoiceValue) {
+  if(configChoice == 'version') {
+    // console.log(configChoiceValue);
+    greetTimeout(`Your new-tab version is ${config.config.version}`)
   }
 }
 

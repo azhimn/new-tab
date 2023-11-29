@@ -1,6 +1,6 @@
 const configDefault = {
+  "version" : "0.4.8",
   "config" : {
-    "version" : "0.4.7",
     "command" : "cfg",
     "style" : {
       "background" : "#1E2021",
