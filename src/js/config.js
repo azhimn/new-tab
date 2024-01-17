@@ -1,5 +1,5 @@
 const configDefault = {
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "versionWarning" : 1,
   "config" : {
     "command" : "cfg",

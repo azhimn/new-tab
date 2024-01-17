@@ -23,9 +23,6 @@
   <li>
     <code>!gh</code> To open or search <a href="https://github.com">GitHub</a>
   </li>
-  <!-- <li>
-    <code>!gm</code> To open <a href="https://mail.google.com">Gmail</a>
-  </li> -->
   <li>
     <code>!w</code> To open or search <a href="https://wikipedia.org">Wikipedia</a>
   </li>
@@ -39,7 +36,7 @@
   <li>
     <code>!cfg style [property] [value]</code> To change <code>new-tab</code> colors.
     <br>Available properties: <code>background</code>, <code>primary</code> (text), <code>accent</code> (code/highlight).
-    <br>Value must be filled with hex color code, e.g. <code>#FFF<code/> or <code>#FEFEFE</code>.
+    <br>Value must be filled with hex color code, e.g. <code>#FFF</code> or <code>#FEFEFE</code>.
   </li>
 </ul>
 
