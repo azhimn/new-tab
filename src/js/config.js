@@ -1,13 +1,15 @@
 const configDefault = {
-  "version" : "0.4.8",
+  "version" : "0.5.0",
+  "versionWarning" : 1,
   "config" : {
     "command" : "cfg",
     "style" : {
       "background" : "#1E2021",
       "primary" : "#c6d08a",
-      "mute" : "#846d57",
-      "greet" : "Welcome back!"
+      "accent" : "#6f9bb1"
     },
+
+    "greet" : "Welcome back!",
 
     "engine" : {
       "active" : "ddg",
@@ -33,13 +35,13 @@ const configDefault = {
         "search" : "/wiki/"
       }
     },
-    "gm" : {
-      "description" : "Open Gmail",
-      "url" : "https://mail.google.com",
-      "param" : {
-        "u" : "/mail/u/"
-      }
-    },
+    // "gm" : {
+    //   "description" : "Open Gmail",
+    //   "url" : "https://mail.google.com",
+    //   "param" : {
+    //     "u" : "/mail/u/"
+    //   }
+    // },
     "gh" : {
       "description" : "Open or search Github",
       "url" : "https://github.com",

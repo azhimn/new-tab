@@ -2,15 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
 :root {
-  --color-background: #fff;
-  --color-primary: #fff;
-  --color-mute: #fff;
+  --color-background: #1E2021;
+  --color-text: #e3eaee;
+  --color-primary: #aec5cd;
+  --color-secondary: #594068;
+  --color-accent: #6f9bb1;
+  /* --color-mute: #846d57; */
 }
 
 html body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  width: 100vw;
 }
 
 .container {
@@ -52,4 +56,5 @@ code {
   background-color: rgba(0, 0, 0, .25);
   padding: 0 .75rem;
   border-radius: .5rem;
+  color: var(--color-accent);
 }
