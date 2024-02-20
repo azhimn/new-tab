@@ -17,6 +17,7 @@ function toggleVersionWarning() {
   return `Greet notification will now BE shown everytime you enter new-tab.`;
 }
 
+// Initialize / reload styles
 function styleInit() {
   window.greet = document.getElementById('greet');
   window.style = document.documentElement.style;
@@ -139,9 +140,16 @@ function searchOption(configOption) {
       greetTimeout(`Please input valid color hex value with prefix <code>#</code>.`);
       return;
     }
+    // Save style to local storage
+    const configData = JSON.parse(localStorage.getItem('config'));
+    configData.config.style[configOption[1]] = configOption[2];
+    localStorage.setItem('config', JSON.stringify(configData));
+    
+    // Refresh style
     config.config.style[configOption[1]] = configOption[2]
-    greetTimeout(`<code>${configOption[2]}</code> has been set as <code>${configOption[1]}</code> color.`);
     styleInit();
+    
+    greetTimeout(`<code>${configOption[2]}</code> has been set as <code>${configOption[1]}</code> color.`);
     
   // Search Engine
   } else if (configOption[0] == 'engine') {

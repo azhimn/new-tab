@@ -30,7 +30,6 @@
     <code>!yt</code> To open or search <a href="https://youtube.com">YouTube</a>.
   </li>
 </ul>
-
 <br>
 <ul>
   <li>
@@ -39,7 +38,6 @@
     <br>Value must be filled with hex color code, e.g. <code>#FFF</code> or <code>#FEFEFE</code>.
   </li>
 </ul>
-
 <br>
 <ul>
   <li>
